@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+github: [metadata]
+title: Owncloud Quickstart
+description: An introduction to installing and connecting to Owncloud
