@@ -5,7 +5,7 @@
   {% if p.navigation_weight %}
 
 
-  <a href="{{ p.url }}" class="button" {% if p.url == page.url %}class="active" 
+  <a href="{{ site.baseurl }}{{ p.url }}" class="button" {% if p.url == page.url %}class="active"
      style="color: #1d2d44; background:white;" {% endif %}>
     {{ p.title }}
   </a>
