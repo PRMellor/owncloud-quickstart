@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% seo %}
+  </head>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+
+
+<a href="https://owncloud.org/"><img class="logo" src="/assets/images/logo_owncloud.svg"></a>
+        <header class="inner">
+
+          {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %}
+
+
+            <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+
+
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+
+          {% include navigation.html %}
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div id="main_content_wrap" class="outer">
+
+
+
+      <section id="main_content" class="inner">
+
+
+        {{ content }}
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <div class="flex-container">
+           <nav class="footer-link-row">
+            <h3>About ownCloud</h3>
+             <ul> <li><a href="https://owncloud.org/events/" title="Events">Events</a></li><li><a href="https://owncloud.org/trademark/" title="Trademark">Trademark</a></li><li><a href="https://owncloud.org/privacy-policy/" title="Privacy policy">Privacy policy</a></li><li><a href="https://owncloud.org/community/code-of-conduct/" title="Code of conduct">Code of conduct</a></li><li><a href="https://owncloud.org/imprint/" title="Imprint">Imprint</a></li> </ul> </nav>
+           <nav class="footer-link-row">
+            <h3>Resources</h3>
+             <ul> <li><a href="https://owncloud.org/help/" title="Help">Help</a></li><li><a href="https://owncloud.org/faq/" title="FAQ">FAQ</a></li><li><a href="https://owncloud.org/changelog/" title="Changelog">Changelog</a></li><li><a href="https://owncloud.org/security/" title="Security">Security</a></li><li><a href="https://doc.owncloud.org/server/latest/admin_manual/" target="_blank" title="Admin manual">Admin manual</a></li><li><a href="https://doc.owncloud.org/server/latest/user_manual/" target="_blank" title="User manual">User manual</a></li> </ul> </nav>
+           <nav class="footer-link-row">
+            <h3>Interact</h3>
+             <ul> <li><a href="https://webchat.freenode.net/?channels=owncloud" target="_blank" title="IRC channel">IRC channel</a></li><li><a href="https://mailman.owncloud.org/mailman/listinfo/" target="_blank" title="Mailing list">Mailing list</a></li><li><a href="https://central.owncloud.org/" target="_blank" title="Forum">Forum</a></li><li><a href="https://doc.owncloud.org/server/10.0/developer_manual/bugtracker/index.html" target="_blank" title="Bug tracker">Bug tracker</a></li><li><a href="https://owncloud.org/community/promotion/" title="Spread the word">Spread the word</a></li> </ul> </nav></div>
+            <div class="text-center footer-subline"> © 2018 ownCloud</div>
+        </div>
+         {% if site.github.is_project_page %}
+         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+         {% endif %}
+         <p class="git">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+
+    </div>
+
+
+
+  </body>
+</html>
