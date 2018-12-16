@@ -3,29 +3,34 @@ layout: default
 title: Install
 navigation_weight: 2
 ---
-### Install and configure an {{ site.product-name }} server
-The steps assume an `OCC` command line installation of the {{ site.product-name }} tarball on Linux using out-of-box defaults.
 
-You must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#http-user-label).
-> {{ site.note}} [More on using OCC commands](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_apps_command.html?highlight=occ)
+## Install and configure an {{ site.product-name }} server
+Here we describe an `OCC` command line installation of an {{ site.product-name }} tarball on a Linux server using out-of-box defaults.
 
-#### Steps
+> {{ site.note}} Other [installation options](https://doc.owncloud.org/server/10.0/admin_manual/installation/) are available.
 
-1. Check you have the [prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#prerequisites-label) required.
+For the installation, you must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#http-user-label).
 
-2. [Download and unpack the {{ site.product-name }} tarball](https://owncloud.org/download/#owncloud-server-tar-ball) into a directory.
-3. Set your webserver as the owner of the {{ site.product-name }} directory:
+> {{ site.note}} More information on [using OCC commands](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_apps_command.html?highlight=occ)
 
-    ```
+### Task
+{{ site.task}} **Summary:**
+Steps to install and configure an Owncloud server from the command line using `OCC`.
+
+1. Check your server has the [prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#prerequisites-label) required.
+
+2. [Download and unpack the {{ site.product-name }} tarball](https://owncloud.org/download/#owncloud-server-tar-ball) into a suitable directory.
+3. Set your webserver as the owner of the `{{ site.product-name }}` directory:
+
+    ```text
     $ sudo chown -R www-data:www-data /var/www/owncloud/
     ```
 
 4. Install {{ site.product-name }} from the `OCC` command line.
 
-    For example:
+    For example, assuming you’ve unpacked the source to `/var/www/owncloud/`, the command is:
 
-    ```
-    # Assuming you’ve unpacked the source to /var/www/owncloud/
+    ```text
     $ cd /var/www/owncloud/
     $ sudo -u www-data php occ maintenance:install \
        --database "mysql" --database-name "owncloud" \
@@ -33,9 +38,13 @@ You must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_m
        --admin-user "admin" --admin-pass "password"
    ```
 
-5. *IMPORTANT*: Set an {{ site.product-name }} owner and [strong permissions](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#strong-perms-label) using the following script.
+5. Set [strong permissions](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#strong-perms-label).
 
-    ```
+    > {{ site.warning}} This step is **very** important and should be performed without delay as it protects your installation
+
+    Copy and run the following script, replacing the paths and variables according to your `{{ site.product-name }}` directory. More details on configuring the script can be found [here](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#post-installation-steps-label).
+
+    ```text
     #!/bin/bash
 
     ocpath='/var/www/owncloud'
@@ -47,6 +56,21 @@ You must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_m
     htuser='www-data'
     htgroup='www-data'
     rootuser='root'
+
+    # Because the data directory can be huge or on external storage, an automatic chmod/chown can take a while.
+    # Therefore this directory can be treated differently.
+    # If you have already created an external data and apps-external directory which you want to link,
+    # set the paths above accordingly. This script can link and set the proper rights and permissions
+    # depending what you enter when running the script.
+    # You have to run this script twice, one time to prepare installation and one time post installation
+
+    # Example input
+    # New install using mkdir:     n/n/n (create missing directories, setup permissions and ownership)
+    # Upgrade using mkdir:         n/n/n (you move/replace data, apps-external and config.php manually, set setup permissions and ownership)
+    # New install using links:     y/y/n (link existing directories, setup permissions and ownership)
+    # Upgrade using links:         y/n/y (link existing directories, copy config.php, permissions and ownership are already ok)
+    # Post installation/upgrade:   either n/n/n or y/y/n
+    # Reset all perm & own:        either n/n/n or y/y/n
 
     echo
     read -p "Do you want to use ln instead of mkdir for creating directories (y/N)? " -r -e answer
@@ -194,3 +218,8 @@ You must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_m
     fi
     echo
     ```
+
+#### What next?
+
+- [Connect users to the {{ site.product-name }} server using the IP address and port 8080]({{ site.baseurl }}{% link tasks/connect.md %})
+- [Add new user accounts]({{ site.baseurl }}{% link tasks/add-user.md %})

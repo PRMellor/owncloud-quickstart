@@ -3,6 +3,8 @@ github: [metadata]
 title: ownCloud Quickstart Guide
 description: Installing and connecting with ownCloud
 product-name: ownCloud
-note: '<i class="fa fa-pencil"></i>'
-warning: '<i class="fa fa-warning"></i> <b>Tip: </b>'
+note: '<i class="fa fa-pencil" style="color:#1d2d44;"></i>'
+warning: '<i class="fa fa-warning" style="color:#1d2d44;"></i>'
+task: '<i class="fa fa-list-ol" style="color:#1d2d44;"></i>'
+check: '<i class="fa fa-info-circle" style="color:#1d2d44;"></i>'
 baseurl: /owncloud-quickstart

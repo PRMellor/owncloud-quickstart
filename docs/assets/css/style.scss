@@ -14,23 +14,36 @@
   padding: 10px 10px 10px 10px;
 }
 
-// #main_content {
-  // min-height: 55vh;
-  // overflow:auto;
-// }
+#main_content_wrap {
+  background: #fff;
+  //min-height: 55vh;
+  //overflow:auto;
+}
 
-//end
+.inner {
+
+max-width: 740px;
+
+}
 
 img.logo {
   position: absolute;
-  top: 0;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 20px 10px 10px;
   background: none;
   border: none;
   box-shadow:none;
+  max-width: 220px;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    img.logo{ display:none; }
 }
 
 #project_title {
@@ -54,11 +67,11 @@ img.logo {
 
 blockquote {
   color: #666;
-  margin-bottom: 10px;
-  padding: 0 0 0 20px;
-  background-color: #FFF;
-  border-style: solid #bbb;
-
+  padding: 0 0 0 10px;
+  background-color: #d9edf7;
+  border: 1px solid #428BCA;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 #footer_wrap {
@@ -103,12 +116,35 @@ p.git {
   margin-left: 10px;
 }
 
-code {
+code.highlighter-rouge {
 
 border: 1px solid #ccc;
+background-color: solid #f9f2f4;
 color: #c7254e;
 font-size: 90%;
+border-radius: 4px;
+margin: auto;
+}
+
+code {
+
+margin: 0;
+font-size: 80%;
+background-color: #f5f5f5;
+}
+
+pre {
+border: 1px solid #ccc;
+border-radius: 4px;
 white-space: pre-wrap;
+padding: 1px;
+}
+
+pre.code {
+
+padding: 0;
+margin: auto;
+
 }
 
 // tab menu
