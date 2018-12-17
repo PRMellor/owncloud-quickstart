@@ -3,7 +3,7 @@ layout: home
 title: Home
 navigation_weight: 1
 ---
-[{{ site.product-name }}](https://owncloud.org/) is a leading open-source cloud collaboration platform that provides a safe, secure, and compliant file synchronization and sharing solution on servers that you control.
+[{{ site.product-name }}](https://owncloud.org/) is a leading open-source cloud collaboration platform, providing a safe, secure, and compliant file synchronization and sharing solution on servers that you control.
 
 Here we provide useful **Administrator** and **User** steps to get you connected.
 
