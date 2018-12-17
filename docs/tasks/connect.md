@@ -7,8 +7,6 @@ navigation_weight: 3
 ## Connect using an IP address and port 8080
 Users are allowed to log into {{ site.product-name }} server only when their browser is pointing to a whitelisted URL in the `trusted_domains` setting of the `config.php` file in `/var/www/owncloud/config/`.
 
-You can enable users to connect using the server's IP address and port 8080 by updating the `trusted domains` setting.
-
 Standard configuration:
 
 ```
@@ -21,7 +19,7 @@ Standard configuration:
 
 ### Task
 {{ site.task}} **Summary:**
-Steps to connect a user through an IP address and port 8080.
+Enable users to connect using the server's IP address and port 8080.
 
 1. Access the `config.php` file and change the `trusted_domains` setting.
 
