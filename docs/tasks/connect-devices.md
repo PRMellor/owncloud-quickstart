@@ -37,11 +37,11 @@ Steps to connect a mobile device to an {{ site.product-name }} server.
    - [iTunes](https://itunes.apple.com) for iOS
    - [Google Play](https://play.google.com/store/apps/details?id=com.owncloud.android) for Android
 
-2. Launch the app from your mobile device to view and manage your files.
+2. Launch the app from your mobile device.
 
    ![owncloud-client-icon](../assets/images/owncloud-app.jpg){:class="img-responsive"}
 
-   You can then manage files on your:
+   Log in to view and manage files on your:
 
    - [iphone or iPad](https://doc.owncloud.org/ios)
    - [Android device](https://doc.owncloud.org/android/)        
