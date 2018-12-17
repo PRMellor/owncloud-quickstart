@@ -11,7 +11,7 @@ Here we describe a command line installation of an {{ site.product-name }} tarba
 
 For the installation, you must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#http-user-label).
 
-> {{ site.note}} More information on [using OCC commands](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_apps_command.html?highlight=occ)
+> {{ site.note}} [Using OCC commands](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_apps_command.html?highlight=occ).
 
 ### Task
 {{ site.task}} **Summary:**
@@ -40,7 +40,7 @@ Steps to install and configure an Owncloud server from the command line using `O
 
 5. Set [strong directory permissions](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#strong-perms-label).
 
-    > {{ site.warning}} This step is **very** important and should be performed without delay as it protects your installation
+    > {{ site.warning}} This step is **very** important and should be performed without delay as it protects your installation.
 
     Copy and run the following script, replacing the paths and variables according to your `{{ site.product-name }}` directory. More details on configuring the script can be found [here](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#post-installation-steps-label).
 
