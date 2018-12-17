@@ -23,7 +23,7 @@ Steps to connect a desktop device to an {{ site.product-name }} server.
    ![owncloud-client-icon](../assets/images/owncloud-client-icon.png){:class="img-responsive"}
 
 ## Connect a mobile app
-You can also use a {{ site.product-name }} **Mobile** app to connect with your {{ site.product-name }} server.
+You can also use an {{ site.product-name }} **Mobile** app to connect with your {{ site.product-name }} server.
 
 ### Task
 {{ site.task}} **Summary:**
