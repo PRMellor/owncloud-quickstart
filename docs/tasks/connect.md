@@ -19,7 +19,7 @@ Standard configuration:
 
 ### Task
 {{ site.task}} **Summary:**
-Enable users to connect using the server's IP address and port 8080.
+Steps to enable users to connect using the server's IP address and port 8080.
 
 1. Access the `config.php` file and change the `trusted_domains` setting.
 
