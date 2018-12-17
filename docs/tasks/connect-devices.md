@@ -18,7 +18,7 @@ Steps to connect a desktop device to an {{ site.product-name }} server.
    - The files to sync from the server
    - The folder that will be your local {{ site.product-name }} folder
 
-2. Once installed, left-click the client icon in your system tray to [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
+2. Once installed, left-click the client icon displayed in your the system tray (Windows, KDE), menu bar (macOS), or notification area (Linux) [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
 
    ![owncloud-client-icon](../assets/images/owncloud-client-icon.png){:class="img-responsive"}
 
@@ -31,7 +31,7 @@ Steps to connect a mobile device to an {{ site.product-name }} server.
 
 1. [Download](https://owncloud.org/download/) and install the {{ site.product-name }} app according to your operating system.
 
-   When you enter your {{ site.product-name }} URL in the web browser of your mobile device, you will be presented with an option to dowload the app.
+   When you enter your {{ site.product-name }} URL in the web browser of your mobile device, you will be presented with an option to download the app.
 
    The app is also available from:
    - [iTunes](https://itunes.apple.com) for iOS
