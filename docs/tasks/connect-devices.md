@@ -15,8 +15,8 @@ Steps to connect a desktop device to an {{ site.product-name }} server.
 
    From the installation wizard, you can choose:
 
-   - The files to sync from the server.
-   - The folder that will be your local {{ site.product-name }} folder.
+   - The files to sync from the server
+   - The folder that will be your local {{ site.product-name }} folder
 
 2. Once installed, left-click the client icon in your system tray to [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
 
