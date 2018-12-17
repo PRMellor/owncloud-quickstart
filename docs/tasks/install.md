@@ -7,7 +7,7 @@ navigation_weight: 2
 ## Install and configure an {{ site.product-name }} server
 Here we describe a command line installation of an {{ site.product-name }} tarball on a Linux server using out-of-box defaults.
 
-> {{ site.product-name }} The steps assume familiarity with the **{{ site.product-name }} console** (`OCC`). If you prefer not to install from the command line, other [installation options](https://doc.owncloud.org/server/10.0/admin_manual/installation/) are available.
+> The steps assume familiarity with the **{{ site.product-name }} console** (`OCC`). If you prefer not to install from the command line, other [installation options](https://doc.owncloud.org/server/10.0/admin_manual/installation/) are available.
 
 For the installation, you must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#http-user-label).
 
