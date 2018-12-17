@@ -18,7 +18,7 @@ Steps to connect a desktop device to an {{ site.product-name }} server.
    - The files to sync from the server
    - The folder that will be your local {{ site.product-name }} folder
 
-2. Once installed, left-click the client icon displayed in your system tray (Windows, KDE), menu bar (macOS), or notification area (Linux) [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
+2. Once installed, left-click the client icon displayed in your system tray (Windows, KDE), menu bar (macOS), or notification area (Linux) to [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
 
    ![owncloud-client-icon](../assets/images/owncloud-client-icon.png){:class="img-responsive"}
 
