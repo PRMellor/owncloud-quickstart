@@ -11,7 +11,7 @@ Here we provide useful **Administrator** and **User** steps to get you connected
 You can install an {{ site.product-name }} server and manage user access with the convenience of simple command line operations and file configuration.
 
 - [Install an {{ site.product-name }} server]({{ site.baseurl }}{% link tasks/install.md %})
-- [Connect users to the {{ site.product-name }} server using the IP address and port 8080]({{ site.baseurl }}{% link tasks/connect.md %})
+- [Connect users to the {{ site.product-name }} server using an IP address and port 8080]({{ site.baseurl }}{% link tasks/connect.md %})
 - [Add new user accounts]({{ site.baseurl }}{% link tasks/add-user.md %})
 
 ## USER
