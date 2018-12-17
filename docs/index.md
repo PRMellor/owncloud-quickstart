@@ -5,7 +5,7 @@ navigation_weight: 1
 ---
 [{{ site.product-name }}](https://owncloud.org/) is a leading open-source cloud collaboration platform that provides a safe, secure, and compliant file synchronization and sharing solution on servers that you control.
 
-Here we provide useful Administrator and User steps to get you connected.
+Here we provide useful **Administrator** and **User** steps to get you connected.
 
 ## ADMINISTRATOR
 You can install an {{ site.product-name }} server and manage user access with the convenience of simple command line operations and file configuration.
@@ -16,4 +16,4 @@ You can install an {{ site.product-name }} server and manage user access with th
 
 ## USER
 You can log in and connect to your {{ site.product-name }} server using a desktop or mobile device.
-- [Connect to a desktop or mobile client]({{ site.baseurl }}{% link tasks/connect-devices.md %})
+- [Connect a desktop or mobile device]({{ site.baseurl }}{% link tasks/connect-devices.md %})

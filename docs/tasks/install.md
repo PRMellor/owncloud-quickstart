@@ -5,9 +5,9 @@ navigation_weight: 2
 ---
 
 ## Install and configure an {{ site.product-name }} server
-Here we describe a command line installation of an {{ site.product-name }} tarball on a Linux server using out-of-box defaults.
+Here we describe a command line installation of an {{ site.product-name }} tarball on a Linux server.
 
-> The steps assume familiarity with the **{{ site.product-name }} console** (`OCC`). If you prefer not to install from the command line, other [installation options](https://doc.owncloud.org/server/10.0/admin_manual/installation/) are available.
+> {{ site.note}} The steps assume familiarity with the **{{ site.product-name }} console** (`OCC`). If you prefer not to install from the command line, other [installation options](https://doc.owncloud.org/server/10.0/admin_manual/installation/) are available.
 
 For the installation, you must run `OCC` as [a HTTP user](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#http-user-label).
 
@@ -38,7 +38,7 @@ Steps to install and configure an Owncloud server from the command line using `O
        --admin-user "admin" --admin-pass "password"
    ```
 
-5. Set [strong permissions](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#strong-perms-label).
+5. Set [strong directory permissions](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#strong-perms-label).
 
     > {{ site.warning}} This step is **very** important and should be performed without delay as it protects your installation
 

@@ -5,9 +5,9 @@ navigation_weight: 4
 ---
 
 ## Create a new user
-Add new users using an `OCC` `user:add` command.
+Add new users using the `user:add` `OCC` command.
 
-> {{ site.note}} You can also manage users from the {{ site.product-name }} [**User Management** page](https://doc.owncloud.org/server/10.0/admin_manual/configuration/user/user_configuration.html), though the command line approach is considered the most convenient for experienced *Administrators*.
+> {{ site.note}} You can also manage users from the {{ site.product-name }} [**User Management** page](https://doc.owncloud.org/server/10.0/admin_manual/configuration/user/user_configuration.html).
 
 ### Task
 {{ site.task}} **Summary:**
@@ -32,10 +32,10 @@ Steps to add a user using the `user:add` command.
    Full set of attributes:
 
    - `uid` (username and login name)
-   - `display` name (Full Name on the {{ site.product-name }} **User Management** page)
+   - `display` name (full name on the {{ site.product-name }} **User Management** page)
    - `email` address
-   - `group` (Any groups that do not exist are created)
+   - `group` (groups that do not exist are created)
    - `login` name
    - `password`
 
-2. Got to the **User Management** page to see the new user.
+2. Got to the {{ site.product-name }} **User Management** page to check the list of users.

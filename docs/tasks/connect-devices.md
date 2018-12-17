@@ -9,24 +9,25 @@ Use the {{ site.product-name }} **Desktop** client to connect with your {{ site.
 
 ### Task
 {{ site.task}} **Summary:**
-Steps to download and connect to a {{ site.product-name }} server.
+Steps to connect a desktop device to an {{ site.product-name }} server.
 
-1. [Download](https://owncloud.org/download/) and install the {{ site.product-name }} desktop according to your operating system.
+1. [Download](https://owncloud.org/download/) and install the {{ site.product-name }} desktop client according to your operating system.
 
-   You can choose what to sync from the server from the installation wizard.
+   From the installation wizard, you can choose:
 
-   You can choose the folder that will be your local {{ site.product-name }} folder.
+   - The files to sync from the server.
+   - The folder that will be your local {{ site.product-name }} folder.
 
-2. Left-click the client icon in your system tray to [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
+2. Once installed, left-click the client icon in your system tray to [configure account settings](https://doc.owncloud.org/desktop/2.5/navigating.html#configuring-owncloud-account-settings).
 
    ![owncloud-client-icon](../assets/images/owncloud-client-icon.png){:class="img-responsive"}
 
 ## Connect a mobile app
-You can also use a {{ site.product-name }} **Mobile** app to connect on-the-go with your {{ site.product-name }} server.
+You can also use a {{ site.product-name }} **Mobile** app to connect with your {{ site.product-name }} server.
 
 ### Task
 {{ site.task}} **Summary:**
-Steps to download and connect to a {{ site.product-name }} server.
+Steps to connect a mobile device to an {{ site.product-name }} server.
 
 1. [Download](https://owncloud.org/download/) and install the {{ site.product-name }} app according to your operating system.
 
@@ -40,5 +41,7 @@ Steps to download and connect to a {{ site.product-name }} server.
 
    ![owncloud-client-icon](../assets/images/owncloud-app.jpg){:class="img-responsive"}
 
-   - [Managing your files on your iphone or iPad](https://doc.owncloud.org/ios)
-   - [Managing files on your Android device](https://doc.owncloud.org/android/)        
+   You can then manage files on your:
+
+   - [iphone or iPad](https://doc.owncloud.org/ios)
+   - [Android device](https://doc.owncloud.org/android/)        
